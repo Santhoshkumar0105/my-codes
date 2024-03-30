@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>home</title>
+<style type="text/css">
+.hello {
+	background-color:antiquewhite;
+}
+</style>
+<script type="text/javascript">
+function myFunction(){   
+             var user =document.getElementById("uname").value;
+             var pd=document.getElementById("pwd").value;
+             console.log(user+" " +pd);
+             alert(user+ " " +pd);
+        if(user==" "){
+        	alert("please enter the user name ");
+        	return false;
+        }
+        if(pd==" "){
+        	alert("please enter the password");
+        	return false;
+        }
+   }
+
+</script>
+</head>
+<body class="hello">
+	<h1>Login From</h1>
+	<form action="index1.html" onsubmi="return myFunction()">
+		user name <input type="user" id="uname" />
+	    password<input type="password" id="pwd"/> 
+		<input type="submit" />
+	</form>
+
+</body>
+</html>
